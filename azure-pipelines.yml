@@ -7,12 +7,12 @@ trigger:
 - master
 
 pool:
-  name:Deafult
+  name: Default
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: mvn clean install
-  displayName: 'Build with maven '
+  displayName: 'Build with Maven'  
 - script: java -jar target/Ansible1-1.0-SNAPSHOT.jar
   displayName: 'Running jar'
